@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position:absolute</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            display: inline-block;
+            top:100px;
+            right:0px;
+        }
+
+        #box3 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            display: inline-block;
+            top:100px;
+            right:0px;
+        }
+
+        #inner_box {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: aquamarine;
+            top:20px;
+            left:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1" class="box">kutu</div>
+    <div id="box2" class="box">kutu</div>
+    <div id="box3" >absolute kutu
+        <div id="inner_box"></div>
+    </div>
+    <div id="box4" class="box">kutu</div>
+</body>
+
+</html>
